@@ -2,6 +2,7 @@ const inventory = newInventory()
 move(inventory).to(0, 0)
 
 const character = newImage('assets/green-character/static.gif')
+character.style.zIndex = '1' //implemented basic z-Index to get link to appear in front of objects, but not sure how to apply it so that he looks to be running in front of some and behind others, as well as give the illution that at a certain point, it would appear he can walk behind that object. Brain is fried, this one was a doozy.
 
 function handleDirectionChange(direction){
     if(direction === null){
@@ -93,7 +94,7 @@ function move(element) {
 
 move(newImage('assets/tree.png')).to(200, 450)
 move(newImage('assets/pillar.png')).to(350, 250)
-move(newImage('assets/pine-tree.png')).to(550, 350) //adjusted x value to attempt to give depth to tree and pillar, but unsure how to get z-index to apply to just one object using js (if that's even a thing)
+move(newImage('assets/pine-tree.png')).to(550, 350) //adjusted x value to attempt to give depth to tree and pillar, but unsure how to get z-index to apply to just one object using js
 move(newImage('assets/crate.png')).to(150, 350)
 move(newImage('assets/well.png')).to(500, 575)
 move(newItem('assets/sword.png')).to(500, 555)
