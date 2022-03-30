@@ -93,7 +93,7 @@ function move(element) {
 
 move(newImage('assets/tree.png')).to(200, 450)
 move(newImage('assets/pillar.png')).to(350, 250)
-move(newImage('assets/pine-tree.png')).to(450, 350)
+move(newImage('assets/pine-tree.png')).to(550, 350) //adjusted x value to attempt to give depth to tree and pillar, but unsure how to get z-index to apply to just one object using js (if that's even a thing)
 move(newImage('assets/crate.png')).to(150, 350)
 move(newImage('assets/well.png')).to(500, 575)
 move(newItem('assets/sword.png')).to(500, 555)
